@@ -13,7 +13,7 @@ describe('Home snapshot', () => {
           <Home />
         </Provider>
         ,
-      </Router>
+      </Router>,
     );
     const coins = document.querySelector('.coin-container');
     expect(coins).toBeTruthy();

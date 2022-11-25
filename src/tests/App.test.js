@@ -11,7 +11,7 @@ describe('App snapshot', () => {
         <Provider store={coinsStore}>
           <App />
         </Provider>
-      </Router>
+      </Router>,
     );
     const titleElement = screen.getByText(/CURRENCIES/i);
     expect(titleElement).toBeInTheDocument();

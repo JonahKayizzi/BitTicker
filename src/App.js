@@ -12,12 +12,13 @@ function App() {
   useEffect(() => {
     dispatch(fetchCoins());
   }, [dispatch]);
+
   return (
     <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="detail" element={<Detail />} />
+        <Route exact path="/:id" element={<Detail />} />
       </Routes>
     </>
   );
