@@ -37,8 +37,8 @@ After you're finished please remove all the comments and instructions!
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[BitTicker\] ](#-bitticker-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
+  - [🛠 Built With Javascript, Javascript Events, Binance API, Linters, npm, Gitflow, Jest, React Testing Library](#-built-with-javascript-javascript-events-binance-api-linters-npm-gitflow-jest-react-testing-library)
+    - [Tech Stack Javascript, React, Redux](#tech-stack-javascript-react-redux)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
@@ -62,11 +62,11 @@ After you're finished please remove all the comments and instructions!
 
 > Your final stop for crypto statistics and analysis. Get a look of the current performance of your favorite bitcoin
 
-**[BitTicker]** is a...
+**[BitTicker]** is a mobile web application that displays a list of metrics (crypto statistics) created with React and Redux.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">Javascript, Javascript Events, Binance API, Linters, npm, Gitflow, Jest, React Testing Library</a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack">Javascript, React, Redux</a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
@@ -74,20 +74,20 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux.js</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://nodejs.org/">Node.js</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -97,9 +97,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[The app fetch statistics of top 100 crypto currencies from the Binance API and lists the top 20]**
+- **[The user can search for more currencies outside those displayed]**
+- **[The app displays the detail of any currency the user selects]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { TwinSpin } from 'react-cssfx-loading';
 import { FaArrowCircleRight, FaCaretUp, FaCaretDown } from 'react-icons/fa';
-import { fetchCoins, searchCoins } from '../redux/bitcoins/bitcoins';
+import { searchCoins } from '../redux/bitcoins/bitcoins';
 
 const Home = () => {
   const fetchedCoins = useSelector((state) => state.coinSlice);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchCoins());
-  }, []);
   const { loading } = fetchedCoins;
 
   const [inputText, setInputText] = useState({
