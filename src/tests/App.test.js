@@ -1,8 +1,19 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from '../App';
+import coinsStore from '../redux/configureStore';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App snapshot', () => {
+  test('renders CURRENCIES text', () => {
+    render(
+      <Router>
+        <Provider store={coinsStore}>
+          <App />
+        </Provider>
+      </Router>
+    );
+    const titleElement = screen.getByText(/CURRENCIES/i);
+    expect(titleElement).toBeInTheDocument();
+  });
 });
