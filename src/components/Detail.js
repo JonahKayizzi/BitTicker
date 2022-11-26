@@ -22,7 +22,11 @@ const Detail = () => {
         {' BACK'}
       </Link>
       <div className="top-detail">
-        <div className={`${thisCoin[0].id} coin-image detail-image`}>.</div>
+        <div
+          className={`${thisCoin[0].id} coin-image detail-image default-image`}
+        >
+          .
+        </div>
         <div>
           <p className="coin-name">{`${thisCoin[0].name} : ${thisCoin[0].symbol}`}</p>
           <p className="price-detail">

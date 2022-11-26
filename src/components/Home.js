@@ -52,7 +52,7 @@ const Home = () => {
           {displayCoins.map((coin) => (
             <li key={coin.id} className="coin-wrapper">
               <Link to={coin.id}>
-                <div className={`${coin.id} coin-image`}>
+                <div className={`${coin.id} coin-image default-image`}>
                   <FaArrowCircleRight />
                 </div>
                 <p className="coin-symbol">{coin.name.toUpperCase()}</p>
